@@ -1,0 +1,29 @@
+Elevator problem:
+An office building has five floors (ground plus four). There is only one elevator to service the upward 
+journey in this building.  The capacity of the elevator is maximum six persons. The office-goers arrive 
+at the ground floor at random times with inter-arrival time distribution of F to use to the elevator.  
+Assume that elevator takes random amount of time to travel to the next floor (because of general process 
+randomness which may include number of people in the elevator, total weight carried by the elevator etc.) 
+and the distribution is G. Suppose that for the entire population of office-goers using this elevator, 10% 
+are going to the first floor, 17% are going to the second floor, 49% are going to the third floor and the 
+rest are going to fourth floor.  Assume that empty elevator takes 0.1K minutes of time to reach from floor 
+K to the ground. The building administration is considering two options: 
+
+1.	Let the elevator be controlled by the people using the elevator. As and when a person arrives at the 
+	ground floor, the person presses the button for the elevator; if the elevator is already on the ground floor, 
+	the upward journey of the person begins immediately; otherwise the person waits till the elevator arrives on 
+	the ground floor. During this waiting time, if another person arrives, the second person doesn’t have to wait 
+	for long and they both enter the elevator at the same time and press for the floor they wish to go to. 
+
+2.	Let the elevator be controlled by a person (call his person “liftman”) appointed by the administration. This 
+	person is supposed to optimize the operation, by batching people. In this case, the liftman allows a batch of six
+	people to be formed before the elevator moves from the ground floor. So the elevator always carries full capacity. 
+	The premise is that instead of a single person traveling, the elevator can carry six people; thereby some energy 
+	savings can be realized. More importantly though, this systems hopes to reduce the average waiting time for a given 
+	office-goer using the elevator. 
+ 
+Assume F to an exponential distribution with a mean time of 1 minute. Assume G to be a normal distribution with mean 
+of 0.18 minutes with a standard deviation of 0.04 minutes. 
+Simulate the two systems to estimate the average waiting time for an office-goer using the elevator. Also estimate 
+the average total time spent in the system for the same office-goer (this may include waiting time, and the time in 
+the elevator).  Estimate the utilization on the elevator.
